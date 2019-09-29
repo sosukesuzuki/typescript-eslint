@@ -941,15 +941,11 @@ export class Converter {
           result.accessibility = accessibility;
         }
 
-        if (node.name.kind === SyntaxKind.Identifier && node.questionToken) {
-          result.optional = true;
-        }
-
         if (node.exclamationToken) {
           result.definite = true;
         }
 
-        if (result.key.type === AST_NODE_TYPES.Literal && node.questionToken) {
+        if (isOptional(node)) {
           result.optional = true;
         }
         return result;
