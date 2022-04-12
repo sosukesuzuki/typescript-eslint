@@ -99,7 +99,7 @@
     "make-dir": "^3.1.0",
     "markdownlint-cli": "^0.29.0",
     "ncp": "^2.0.0",
-    "prettier": "2.5.1",
+    "prettier": "2.6.2",
     "pretty-format": "^27.3.1",
     "rimraf": "^3.0.2",
     "tmp": "^0.2.1",
